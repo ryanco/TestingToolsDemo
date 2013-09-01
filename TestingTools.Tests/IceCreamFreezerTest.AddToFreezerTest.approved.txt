@@ -1,0 +1,2 @@
+﻿Name[0] = Tastey
+Name[1] = Lite
