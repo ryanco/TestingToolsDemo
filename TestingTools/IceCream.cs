@@ -1,30 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace TestingTools
 {
-    public class IceCream
-    {
-        private string _name;
+	/// <summary>
+	/// Ice Cream class for testing.
+	/// </summary>
+	public class IceCream
+	{
+		public string Name { get; set; }
+		public string Flavor { get; set; }
+		public decimal Cost { get; set; }
 
 
-        public IceCream()
-        {
-        
-        }
+		/// <summary>
+		/// Returns the string representation of Ice Cream.
+		/// </summary>
+		/// <returns>The string representation of Ice Cream.</returns>
+		public override string ToString()
+		{
+			return Name;
+		}
 
-        public IceCream(string name)
-        {
-            _name = name;
-        }
-
-        public override string ToString()
-        {
-            return _name;
-        }
-
-    }
+	}
 }

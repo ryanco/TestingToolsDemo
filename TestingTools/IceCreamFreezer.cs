@@ -1,40 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿using System.Collections.Generic;
 
 namespace TestingTools
 {
-    public class IceCreamFreezer : IProvideIceCream, IStoreIceCream
-    {
-        private readonly List<IceCream> _iceCreams; 
- 
-        public IceCreamFreezer()
-        {
-            _iceCreams = new List<IceCream>();
-        }
+	public class IceCreamFreezer : IProvideIceCream, IStoreIceCream
+	{
+		private readonly List<IceCream> _iceCreams;
 
-        public IList<IceCream> Contents()
-        {
-            return _iceCreams;
-        }
+		/// <summary>
+		/// Constructs a new Ice Cream Freezer
+		/// </summary>
+		public IceCreamFreezer()
+		{
+			_iceCreams = new List<IceCream>();
+		}
 
-        public IceCream ProvideIceCream()
-        {
-            return new IceCream();
-        }
+		/// <summary>
+		/// Returns the contents of the Ice Cream Freezer.
+		/// </summary>
+		/// <returns><see cref="IList{IceCream}"/> of Ice Cream.</returns>
+		public IList<IceCream> Contents()
+		{
+			return _iceCreams;
+		}
 
-        public void AddIceCream(IceCream iceCream)
-        {
-            _iceCreams.Add(iceCream);
-        }
+		/// <summary>
+		/// Returns an Ice Cream From the Freezer.
+		/// </summary>
+		/// <returns><see cref="IceCream"/> from the Freezer.</returns>
+		public IceCream ProvideIceCream()
+		{
+			return new IceCream();
+		}
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
-        {
-            return _iceCreams.ToString();
-        }
-    }
+		public void AddIceCream(IceCream iceCream)
+		{
+			_iceCreams.Add(iceCream);
+		}
+
+	}
 }

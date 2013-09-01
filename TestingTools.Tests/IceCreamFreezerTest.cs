@@ -1,22 +1,19 @@
-﻿using System;
-using ApprovalTests;
-using ApprovalTests.Reporters;
+﻿using ApprovalTests;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestingTools.Tests
 {
-    [TestClass]
-    public class IceCreamFreezerTest
-    {
-        [TestMethod]
-        [UseReporter(typeof(WinMergeReporter))]
-        public void AddToFreezerTest()
-        {
-            var freezer = new IceCreamFreezer();
-            freezer.AddIceCream(new IceCream("Tastey"));
-            freezer.AddIceCream(new IceCream("Lite"));
+	[TestClass]
+	public class IceCreamFreezerTest
+	{
+		[TestMethod]
+		public void AddToFreezerTest()
+		{
+			var freezer = new IceCreamFreezer();
+			freezer.AddIceCream(new IceCream { Name = "Tastey" });
+			freezer.AddIceCream(new IceCream { Name = "Lite" });
 
-            Approvals.VerifyAll(freezer.Contents(), "Name");
-        }
-    }
+			Approvals.VerifyAll("Freezer Contents Test:", freezer.Contents(), "Ice Cream");
+		}
+	}
 }

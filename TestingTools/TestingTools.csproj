@@ -40,8 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IceCreamFreezer.cs" />
-    <Compile Include="IProvideValue.cs" />
     <Compile Include="IceCream.cs" />
+    <Compile Include="IProvideIceCream.cs" />
     <Compile Include="IStoreIceCream.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
