@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="IceCreamFreezerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IceCreamTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestingTools\TestingTools.csproj">
@@ -72,7 +73,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="IceCreamFreezerTest.AddToFreezerTest.approved.txt" />
+    <Content Include="IceCreamFreezerTest.AddToFreezerApprovalTest.approved.txt" />
+    <Content Include="IceCreamTest.IceCreamApprovalsTest.approved.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

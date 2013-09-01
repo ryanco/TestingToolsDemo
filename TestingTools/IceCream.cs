@@ -9,7 +9,7 @@ namespace TestingTools
 	{
 		public string Name { get; set; }
 		public string Flavor { get; set; }
-		public decimal Cost { get; set; }
+		public double Cost { get; set; }
 
 
 		/// <summary>
@@ -18,7 +18,7 @@ namespace TestingTools
 		/// <returns>The string representation of Ice Cream.</returns>
 		public override string ToString()
 		{
-			return Name;
+			return "Name: "+Name+" Flavor: "+Flavor+" Cost: "+Cost;
 		}
 
 	}

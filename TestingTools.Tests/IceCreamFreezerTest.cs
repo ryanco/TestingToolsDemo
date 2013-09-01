@@ -7,7 +7,7 @@ namespace TestingTools.Tests
 	public class IceCreamFreezerTest
 	{
 		[TestMethod]
-		public void AddToFreezerTest()
+		public void AddToFreezerApprovalTest()
 		{
 			var freezer = new IceCreamFreezer();
 			freezer.AddIceCream(new IceCream { Name = "Tastey" });
