@@ -72,6 +72,10 @@
       <Name>IceCream.Lib</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="IceCreamApprovalTests.IceCreamApprovalTest.approved.txt" />
+    <Content Include="IceCreamFreezerApprovalTests.AddToFreezerApprovalTest.approved.txt" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
