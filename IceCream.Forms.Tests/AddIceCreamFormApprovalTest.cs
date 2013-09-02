@@ -1,9 +1,9 @@
 ﻿using ApprovalTests.Reporters;
 using ApprovalTests.WinForms;
-using IceCream.Forms;
+using IceCream.Lib;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace IceCream.Lib.Tests
+namespace IceCream.Forms.Tests
 {
 	[TestClass]
 	public class AddIceCreamFormApprovalTest
@@ -22,7 +22,7 @@ namespace IceCream.Lib.Tests
 		public void TestAddingIceCream()
 		{
 			var form = new AddIceCreamForm();
-			var iceCream = new IceCream
+			var iceCream = new IceCreamProduct
 				{
 					Name = "Fatty Cake",
 					Cost = "2.50",

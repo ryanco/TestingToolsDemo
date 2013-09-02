@@ -5,11 +5,11 @@ using ApprovalTests.Reporters;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IceCream.Lib.Tests")]
+[assembly: AssemblyTitle("IceCreamProduct.Lib.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("IceCream.Lib.Tests")]
+[assembly: AssemblyProduct("IceCreamProduct.Lib.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

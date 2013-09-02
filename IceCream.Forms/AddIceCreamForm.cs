@@ -19,7 +19,7 @@ namespace IceCream.Forms
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			var iceCream = new Lib.IceCream
+			var iceCream = new Lib.IceCreamProduct
 				{
 					Name = nameBox.Text,
 					Cost = costBox.Text,
@@ -31,10 +31,10 @@ namespace IceCream.Forms
 		/// <summary>
 		/// Add Ice Cream to the Storage unit.
 		/// </summary>
-		/// <param name="iceCream"></param>
-		public void AddIceCreamToFreezer(Lib.IceCream iceCream)
+		/// <param name="iceCreamProduct"></param>
+		public void AddIceCreamToFreezer(Lib.IceCreamProduct iceCreamProduct)
 		{
-			_freezer.AddIceCream(iceCream);
+			_freezer.AddIceCream(iceCreamProduct);
 			ResetListBox();
 		}
 		/// <summary>

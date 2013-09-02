@@ -10,8 +10,8 @@ namespace IceCream.Lib.Tests
 		public void AddToFreezerApprovalTest()
 		{
 			var freezer = new IceCreamFreezer();
-			freezer.AddIceCream(new IceCream { Name = "Tastey" });
-			freezer.AddIceCream(new IceCream { Name = "Lite" });
+			freezer.AddIceCream(new IceCreamProduct { Name = "Tastey" });
+			freezer.AddIceCream(new IceCreamProduct { Name = "Lite" });
 
 			Approvals.VerifyAll("Freezer Contents Test:", freezer.Contents(), "Ice Cream");
 		}

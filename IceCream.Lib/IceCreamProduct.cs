@@ -5,7 +5,7 @@ namespace IceCream.Lib
 	/// <summary>
 	/// Ice Cream class for testing.
 	/// </summary>
-	public class IceCream
+	public class IceCreamProduct
 	{
 		public string Name { get; set; }
 		public string Flavor { get; set; }

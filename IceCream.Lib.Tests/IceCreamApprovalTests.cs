@@ -9,7 +9,7 @@ namespace IceCream.Lib.Tests
 		[TestMethod]
 		public void IceCreamApprovalTest()
 		{
-			var iceCream = new IceCream
+			var iceCream = new IceCreamProduct
 				{
 					Name = "Rull Guud",
 					Cost = "2.50",

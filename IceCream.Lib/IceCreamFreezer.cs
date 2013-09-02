@@ -4,21 +4,21 @@ namespace IceCream.Lib
 {
 	public class IceCreamFreezer : IProvideIceCream, IStoreIceCream
 	{
-		private readonly List<IceCream> _iceCreams;
+		private readonly List<IceCreamProduct> _iceCreams;
 
 		/// <summary>
 		/// Constructs a new Ice Cream Freezer
 		/// </summary>
 		public IceCreamFreezer()
 		{
-			_iceCreams = new List<IceCream>();
+			_iceCreams = new List<IceCreamProduct>();
 		}
 
 		/// <summary>
 		/// Returns the contents of the Ice Cream Freezer.
 		/// </summary>
-		/// <returns><see cref="IList{IceCream}"/> of Ice Cream.</returns>
-		public IList<IceCream> Contents()
+		/// <returns><see cref="IList{IceCreamProduct}"/> of Ice Cream.</returns>
+		public IList<IceCreamProduct> Contents()
 		{
 			return _iceCreams;
 		}
@@ -26,15 +26,15 @@ namespace IceCream.Lib
 		/// <summary>
 		/// Returns an Ice Cream From the Freezer.
 		/// </summary>
-		/// <returns><see cref="IceCream"/> from the Freezer.</returns>
-		public IceCream ProvideIceCream()
+		/// <returns><see cref="IceCreamProduct"/> from the Freezer.</returns>
+		public IceCreamProduct ProvideIceCream()
 		{
-			return new IceCream();
+			return new IceCreamProduct();
 		}
 
-		public void AddIceCream(IceCream iceCream)
+		public void AddIceCream(IceCreamProduct iceCreamProduct)
 		{
-			_iceCreams.Add(iceCream);
+			_iceCreams.Add(iceCreamProduct);
 		}
 
 	}

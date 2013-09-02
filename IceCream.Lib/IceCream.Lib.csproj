@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IceCream.cs" />
+    <Compile Include="IceCreamProduct.cs" />
     <Compile Include="IceCreamFreezer.cs" />
     <Compile Include="IProvideIceCream.cs" />
     <Compile Include="IStoreIceCream.cs" />

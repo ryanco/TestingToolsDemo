@@ -2,6 +2,6 @@
 {
 	public interface IProvideIceCream
 	{
-		IceCream ProvideIceCream();
+		IceCreamProduct ProvideIceCream();
 	}
 }

@@ -2,6 +2,6 @@
 {
 	public interface IStoreIceCream
 	{
-		void AddIceCream(IceCream iceCream);
+		void AddIceCream(IceCreamProduct iceCreamProduct);
 	}
 }
