@@ -1,4 +1,4 @@
 ﻿Freezer Contents Test:
 
-Ice Cream[0] = Name: Tastey Flavor:  Cost: 0
-Ice Cream[1] = Name: Lite Flavor:  Cost: 0
+Ice Cream[0] = Name: Tastey Flavor:  Cost: 
+Ice Cream[1] = Name: Lite Flavor:  Cost: 

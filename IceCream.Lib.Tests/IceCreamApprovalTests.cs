@@ -12,7 +12,7 @@ namespace IceCream.Lib.Tests
 			var iceCream = new IceCream
 				{
 					Name = "Rull Guud",
-					Cost = 2.50,
+					Cost = "2.50",
 					Flavor = "Bumpin Brogrammer"
 				};
 			Approvals.Verify(iceCream);

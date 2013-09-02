@@ -9,7 +9,7 @@ namespace IceCream.Lib
 	{
 		public string Name { get; set; }
 		public string Flavor { get; set; }
-		public double Cost { get; set; }
+		public string Cost { get; set; }
 
 
 		/// <summary>

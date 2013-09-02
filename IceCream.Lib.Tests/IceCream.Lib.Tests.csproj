@@ -44,6 +44,7 @@
       <HintPath>..\packages\ApprovalUtilities.3.0.01\lib\net35\ApprovalUtilities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -61,18 +62,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IceCreamApprovalTests.cs" />
     <Compile Include="IceCreamFreezerApprovalTests.cs" />
+    <Compile Include="AddIceCreamFormApprovalTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\IceCream.Forms\IceCream.Forms.csproj">
+      <Project>{4de5ab3f-426f-4d9e-975b-aaf5e7029666}</Project>
+      <Name>IceCream.Forms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IceCream.Lib\IceCream.Lib.csproj">
       <Project>{ba74e02e-16fe-4356-8a39-227ac0029e27}</Project>
       <Name>IceCream.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddIceCreamFormApprovalTest.TestAddingIceCream.approved.png" />
+    <Content Include="AddIceCreamFormApprovalTest.TestInitializationOfForm.approved.png" />
     <Content Include="IceCreamApprovalTests.IceCreamApprovalTest.approved.txt" />
     <Content Include="IceCreamFreezerApprovalTests.AddToFreezerApprovalTest.approved.txt" />
   </ItemGroup>
