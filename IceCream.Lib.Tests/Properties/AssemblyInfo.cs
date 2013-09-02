@@ -5,15 +5,15 @@ using ApprovalTests.Reporters;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TestingTools.Tests")]
+[assembly: AssemblyTitle("IceCream.Lib.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TestingTools.Tests")]
+[assembly: AssemblyProduct("IceCream.Lib.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-//Reporter for Approval Tests
+
 [assembly: UseReporter(typeof(AppConfigReporter))]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -22,7 +22,7 @@ using ApprovalTests.Reporters;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("726e9b03-a8d7-4513-8d44-b8f9603076a2")]
+[assembly: Guid("dad546ed-17d1-485b-a688-4c8330000981")]
 
 // Version information for an assembly consists of the following four values:
 //

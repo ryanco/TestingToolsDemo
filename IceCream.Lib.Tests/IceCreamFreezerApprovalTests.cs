@@ -1,10 +1,10 @@
 ﻿using ApprovalTests;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TestingTools.Tests
+namespace IceCream.Lib.Tests
 {
 	[TestClass]
-	public class IceCreamFreezerTest
+	public class IceCreamFreezerApprovalTests
 	{
 		[TestMethod]
 		public void AddToFreezerApprovalTest()

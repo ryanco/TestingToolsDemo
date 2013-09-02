@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7844D2A4-B262-46CC-B26E-82EC08A25693}</ProjectGuid>
+    <ProjectGuid>{FA520A80-5FD0-4768-BDA6-3DED9509CB56}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestingTools.Tests</RootNamespace>
-    <AssemblyName>TestingTools.Tests</AssemblyName>
+    <RootNamespace>IceCream.Lib.Tests</RootNamespace>
+    <AssemblyName>IceCream.Lib.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -58,23 +58,19 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="IceCreamFreezerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IceCreamTest.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TestingTools\TestingTools.csproj">
-      <Project>{7c392c7d-666c-45aa-9a5c-07e1b025c3d2}</Project>
-      <Name>TestingTools</Name>
-    </ProjectReference>
+    <Compile Include="IceCreamApprovalTests.cs" />
+    <Compile Include="IceCreamFreezerApprovalTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="IceCreamFreezerTest.AddToFreezerApprovalTest.approved.txt" />
-    <Content Include="IceCreamTest.IceCreamApprovalsTest.approved.txt" />
+    <ProjectReference Include="..\IceCream.Lib\IceCream.Lib.csproj">
+      <Project>{ba74e02e-16fe-4356-8a39-227ac0029e27}</Project>
+      <Name>IceCream.Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

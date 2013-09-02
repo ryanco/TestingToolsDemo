@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TestingTools
+namespace IceCream.Lib
 {
 	public class IceCreamFreezer : IProvideIceCream, IStoreIceCream
 	{

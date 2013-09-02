@@ -1,6 +1,6 @@
 ﻿
 
-namespace TestingTools
+namespace IceCream.Lib
 {
 	/// <summary>
 	/// Ice Cream class for testing.
