@@ -1,4 +1,6 @@
 ﻿Freezer Contents Test:
 
-Ice Cream[0] = Name: Tastey Flavor:  Cost: 
-Ice Cream[1] = Name: Lite Flavor:  Cost: 
+Ice Cream[0] = Name: Default Buddy Flavor: Unflavored Cost: 1.50
+Ice Cream[1] = Name: Sad Panda Bars Flavor: Trail of Tears Cost: 1.50
+Ice Cream[2] = Name: Tastey Flavor:  Cost: 
+Ice Cream[3] = Name: Lite Flavor:  Cost: 

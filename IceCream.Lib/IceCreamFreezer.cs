@@ -12,6 +12,7 @@ namespace IceCream.Lib
 		public IceCreamFreezer()
 		{
 			_iceCreams = new List<IceCreamProduct>();
+			Init();
 		}
 
 		/// <summary>
@@ -37,5 +38,13 @@ namespace IceCream.Lib
 			_iceCreams.Add(iceCreamProduct);
 		}
 
+		/// <summary>
+		/// Add some default values to the freezer
+		/// </summary>
+		private void Init()
+		{
+			_iceCreams.Add(new IceCreamProduct{Name="Default Buddy", Cost ="1.50", Flavor ="Unflavored"});
+			_iceCreams.Add(new IceCreamProduct{Name="Sad Panda Bars", Cost ="1.50", Flavor ="Trail of Tears"});
+		}
 	}
 }

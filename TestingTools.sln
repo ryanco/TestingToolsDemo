@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceCream.Lib.Tests", "IceCr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceCream.Forms.Tests", "IceCream.Forms.Tests\IceCream.Forms.Tests.csproj", "{B41479E5-66CD-49A1-86F8-37A17C814286}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceCream.Mvc", "IceCream.Mvc\IceCream.Mvc.csproj", "{E05BC51F-F323-4E1B-B524-1816E1AB5483}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceCream.Mvc.Tests", "IceCream.Mvc.Tests\IceCream.Mvc.Tests.csproj", "{1C6DAE56-AB79-440D-BEAF-FB8277D18F9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{B41479E5-66CD-49A1-86F8-37A17C814286}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B41479E5-66CD-49A1-86F8-37A17C814286}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B41479E5-66CD-49A1-86F8-37A17C814286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E05BC51F-F323-4E1B-B524-1816E1AB5483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05BC51F-F323-4E1B-B524-1816E1AB5483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05BC51F-F323-4E1B-B524-1816E1AB5483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05BC51F-F323-4E1B-B524-1816E1AB5483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C6DAE56-AB79-440D-BEAF-FB8277D18F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C6DAE56-AB79-440D-BEAF-FB8277D18F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C6DAE56-AB79-440D-BEAF-FB8277D18F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C6DAE56-AB79-440D-BEAF-FB8277D18F9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
