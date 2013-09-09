@@ -6,6 +6,8 @@ namespace IceCream.Lib
 	{
 		private readonly List<IceCreamProduct> _iceCreams;
 
+		public string Name { get; set; }
+
 		/// <summary>
 		/// Constructs a new Ice Cream Freezer
 		/// </summary>

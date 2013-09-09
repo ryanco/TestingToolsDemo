@@ -7,14 +7,28 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace IceCream.Mvc.Tests.Controllers
 {
 	[TestClass]
-	public class IceCreamFreezerControllerTest
+	public class IceCreamFreezerControllerTest : MvcTest
 	{
 		[TestMethod]
 		[UseReporter(typeof(TortoiseDiffReporter))]
 		public void TestSimpleView()
 		{
-			PortFactory.MvcPort = 3235;
 			MvcApprovals.VerifyMvcPage(new IceCreamFreezerController().SimpleView);
+		}
+
+		[TestMethod]
+		[UseReporter(typeof (WinMergeReporter))]
+		public void TestIndexView()
+		{
+			MvcApprovals.VerifyMvcPage(new IceCreamFreezerController().Index);
+		}
+	}
+
+	public class MvcTest
+	{
+		public MvcTest()
+		{
+			PortFactory.MvcPort = 3235;
 		}
 	}
 }

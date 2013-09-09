@@ -1,7 +1,12 @@
 ﻿@model dynamic
 
-@{
-	ViewBag.Title = "title";
-}
 
-<h2>title</h2>
+<h2>@ViewBag.Title</h2>
+
+<h3>Freezer Contents:</h3>
+<ul>
+	@foreach (var iceCreamProduct in ViewBag.FreezerContents)
+	{
+		<li>@iceCreamProduct</li>
+	}
+</ul>

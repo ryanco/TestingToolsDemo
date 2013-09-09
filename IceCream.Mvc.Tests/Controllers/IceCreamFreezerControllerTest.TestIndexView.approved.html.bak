@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head><base href="http://localhost:3235/IceCreamFreezer">
+        <meta charset="utf-8" />
+        <title> - My ASP.NET MVC Application</title>
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="/Content/site.css" rel="stylesheet"/>
+
+        <script src="/Scripts/modernizr-2.6.2.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title"><a href="/">your logo here</a></p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                            <ul>
+        <li><a href="/Account/Register" id="registerLink">Register</a></li>
+        <li><a href="/Account/Login" id="loginLink">Log in</a></li>
+    </ul>
+
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/Home/About">About</a></li>
+                            <li><a href="/Home/Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            
+            <section class="content-wrapper main-content clear-fix">
+                
+<h2></h2>
+
+<h3>Freezer Contents:</h3>
+<ul>
+		<li>Name: Default Buddy Flavor: Unflavored Cost: 1.50</li>
+		<li>Name: Sad Panda Bars Flavor: Trail of Tears Cost: 1.50</li>
+</ul>
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; 2013 - My ASP.NET MVC Application</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/Scripts/jquery-1.8.2.js"></script>
+
+        
+    </body>
+</html>

@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using IceCream.Lib;
 
 namespace IceCream.Mvc.Controllers
 {
 	public class IceCreamFreezerController : Controller
 	{
-		//
-		// GET: /IceCreamFreezer/
 
 		public ActionResult Index()
 		{
 			var freezer = new IceCreamFreezer();
-            return View();
-        }
+			return Index(freezer);
+		}
 
 		public ActionResult SimpleView()
 		{
@@ -24,6 +18,14 @@ namespace IceCream.Mvc.Controllers
 			ViewBag.BodyText = "Makin gud websites";
 			return View();
 		}
+
+		private ActionResult Index(IceCreamFreezer freezer)
+		{
+			ViewBag.Title = freezer.Name;
+			ViewBag.FreezerContents = freezer.Contents();
+			return View();
+		}
+
 
 	}
 }
